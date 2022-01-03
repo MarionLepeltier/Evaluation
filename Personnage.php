@@ -30,6 +30,7 @@ class Personnage {
         echo $this->attack." attack\n -";
         echo $this->defense." defense \n -";
         echo $this->mana." mana \n ";  
+        // echo "Il posséde ".$this->items;
     }
 
     // Fonction get qui permet de rendre visible les attributs privés.
@@ -67,6 +68,11 @@ class Personnage {
         return $this->mana = $newMana;
     }
 
+
+    // // Fonction pour ajouter des items
+    public function addItems($newItems){
+        array_push($this->items, "$newItems");
+    }
 }
 
 

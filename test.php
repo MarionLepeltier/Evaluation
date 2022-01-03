@@ -5,5 +5,10 @@
 
     
   $perso-> setMana(3);
+  echo $perso-> addItems("baton");
+  echo $perso-> addItems("fléche");
+  echo $perso-> addItems("arc");
   $perso-> afficher_stats();  
+  
+  var_dump($perso);
 ?>
